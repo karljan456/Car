@@ -1,9 +1,15 @@
 package com.company;
 
 public class Main {
-
     public static void main(String[] args) {
 	// write your code here
+        Car car = new Car("Fiat", 500, 50);
+
+        car.printData();
+        car.accelerate();
+        car.brake();
+        car.printData();
+        car.refuel(car.amountOfFuel);
     }
 }
 class Car {
