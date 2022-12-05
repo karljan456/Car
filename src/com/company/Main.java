@@ -50,4 +50,13 @@ class Car {
 
     }
 
+    public void refuel(int amount){
+
+        System.out.println("Fuel on the tank: " + amount);
+        System.out.println("Refuel: 5");
+        amount += 5;
+        System.out.println("Fuel on the tank after the refuel: " + amount);
+
+    }
+
 }
