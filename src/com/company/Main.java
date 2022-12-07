@@ -5,10 +5,10 @@ public class Main {
 	// write your code here
         Car car = new Car("Fiat", 500, 50);
 
-        car.printData();
+//        car.printData();
         car.accelerate();
         car.brake();
-        car.printData();
+//        car.printData();
         car.refuel(car.amountOfFuel);
     }
 }
@@ -23,7 +23,7 @@ class Car {
         this.brand = brand;
         this.model = model;
         this.amountOfFuel = amountOfFuel;
-
+        printData();
     }
 
 
@@ -49,7 +49,7 @@ class Car {
 
     }
 
-    public void printData() {
+    private void printData() {
 
         System.out.println("The brand is " + brand + ". The model is " + model + ". Amount of fuel left: "
                 + amountOfFuel + " litres.");
